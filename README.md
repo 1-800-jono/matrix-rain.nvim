@@ -45,16 +45,16 @@ require('matrix-rain').setup {
 }
 ```
 
-## Triggering it automatically
+## Show automatically on start
 
-This plugin only provides the effect and the `:MatrixRain` command — it
-doesn't hook itself into `VimEnter` or anything else. Wire that up yourself,
-e.g.:
+  This plugin only provides the effect and the `:MatrixRain` command — it
+  doesn't hook itself into `VimEnter` or anything else. Wire that up yourself,
+  e.g.:
 
-```lua
-vim.api.nvim_create_autocmd('VimEnter', {
-  callback = function()
-    require('matrix-rain').rain()
-  end,
-})
+  ```lua
+  vim.api.nvim_create_autocmd('VimEnter', {
+    callback = function()
+      require('matrix-rain').rain()
+    end,
+  })
 ```
